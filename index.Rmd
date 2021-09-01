@@ -1,0 +1,20 @@
+---
+title: ""
+image: "personal_picture_v2.png"
+links:
+  - label: Twitter
+    url: "https://twitter.com/ijeamaka_a"
+  - label: GitHub
+    url: "https://github.com/Ijeamakaanyene"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/"
+  - label: Shop
+    url: "https://www.etsy.com/shop/ArtSnacksPrints"
+  - label: Email
+    url: "mailto:ijeamaka.anyene@gmail.com"
+site: distill::distill_website
+output:
+  postcards::jolla
+---
+
+Hey there, I'm Ijeamaka. I'm a full-time healthcare data analyst and a free-time data visualization and computational artist. 
