@@ -4,7 +4,7 @@ description: |
   My projects 
 output: 
   distill::distill_article:
-    css: kaijatheme.css
+    css: theme.css
 ---
 
 ```{r setup, include=FALSE}
@@ -18,20 +18,22 @@ source("R/functions.R")
 
 # Openscapes
 
+[**Openscapes.org**](https://openscapes.org) is an approach for kinder, better science in less time. 
+
 ```{r}
 create_proj_card(
-  img_src = "images/ZINE_COVER.png",
-  url = "https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/",
+  img_src = "images/openscapes_hex.jpg",
+  url = "https://openscapes.org",
   title = "Openscapes Champions Program",
-  text = "A love letter to coord_polar() masquerading as a #rstats zine, 2021",
+  text = "An open data science mentorship program for science teams",
   text2 = ""
 )
 
 create_proj_card(
-  img_src = "images/cloudscape_app.jpeg",
-  url = "https://ijeamaka-a.shinyapps.io/cloudtopia_shinyapp/",
-  title = "NASA Openscapes",
-  text = "a shiny app of a short looping video of a cloudscape, 2021",
+  img_src = "images/nasa-openscapes.png",
+  url = "nasa-openscapes.org",
+  title = "NASA Openscapes Framework",
+  text = "Supporting scientists using data from NASA Earthdata served from the Distributed Active Archive Centers (DAACs) as they migrate workflows to the cloud",
   text2 = ""
 )
 ```
@@ -39,7 +41,8 @@ create_proj_card(
 
 # Ocean Health Index
 
-I was part of the Ocean Health Index team from 2013-2019, where I was a science program lead and helped amplify our transitions to open data science. 
+I was a science program lead for the Ocean Health Index from 2013-2019 and helped amplify our transformation to open data science. 
+
 ```{r}
 create_proj_card(
   img_src = "images/here_say_media.png",
