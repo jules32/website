@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" version="1.0">
   <url>
-    <loc>https://ijeamaka-anyene.netlify.app/blog.html</loc>
+    <loc>https://juliaslowndes.com/blog.html</loc>
     <lastmod>2021-08-08T00:04:52-07:00</lastmod>
   </url>
   <url>
-    <loc>https://ijeamaka-anyene.netlify.app/</loc>
+    <loc>https://juliaslowndes.com/</loc>
+    <lastmod>2021-09-03T08:17:03-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://juliaslowndes.com/projects.html</loc>
+    <lastmod>2021-09-03T08:17:28-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://juliaslowndes.com/talks_features.html</loc>
+    <lastmod>2021-09-03T08:17:43-07:00</lastmod>
+  </url>
+  <url>
+    <loc>https://juliaslowndes.com/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/</loc>
     <lastmod>2021-08-08T00:04:52-07:00</lastmod>
   </url>
   <url>
-    <loc>https://ijeamaka-anyene.netlify.app/portfolio.html</loc>
+    <loc>https://juliaslowndes.com/posts/2021-01-04-radial-patterns-in-ggplot2/</loc>
     <lastmod>2021-08-08T00:04:52-07:00</lastmod>
   </url>
   <url>
-    <loc>https://ijeamaka-anyene.netlify.app/talks_features.html</loc>
+    <loc>https://juliaslowndes.com/posts/2020-10-22-workshop-an-introduction-to-ggplot2/</loc>
     <lastmod>2021-08-08T00:04:52-07:00</lastmod>
   </url>
   <url>
-    <loc>https://ijeamaka-anyene.netlify.app/posts/2021-01-14-art-ggplot-exploring-radial-visualizations/</loc>
-    <lastmod>2021-08-08T00:04:52-07:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/</loc>
-    <lastmod>2021-08-08T00:04:52-07:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ijeamaka-anyene.netlify.app/posts/2020-10-22-workshop-an-introduction-to-ggplot2/</loc>
-    <lastmod>2021-08-08T00:04:52-07:00</lastmod>
-  </url>
-  <url>
-    <loc>https://ijeamaka-anyene.netlify.app/posts/2020-04-16-covid-19-visualization/</loc>
+    <loc>https://juliaslowndes.com/posts/2020-04-16-covid-19-visualization/</loc>
     <lastmod>2021-08-08T00:04:52-07:00</lastmod>
   </url>
 </urlset>

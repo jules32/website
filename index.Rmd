@@ -3,18 +3,29 @@ title: ""
 image: "personal_picture_v2.png"
 links:
   - label: Twitter
-    url: "https://twitter.com/ijeamaka_a"
+    url: "https://twitter.com/juliesquid"
   - label: GitHub
-    url: "https://github.com/Ijeamakaanyene"
+    url: "https://github.com/jules32"
+  - label: ORCID
+    url: "https://orcid.org/0000-0003-1682-3872"
   - label: LinkedIn
-    url: "https://www.linkedin.com/in/ijeamaka-anyene-303a16a0/"
-  - label: Shop
-    url: "https://www.etsy.com/shop/ArtSnacksPrints"
+    url: "https://www.linkedin.com/in/julia-stewart-lowndes"
   - label: Email
-    url: "mailto:ijeamaka.anyene@gmail.com"
+    url: "mailto:lowndes@nceas.ucsb.edu"
 site: distill::distill_website
 output:
-  postcards::jolla
+  postcards::trestles
 ---
 
-Hey there, I'm Ijeamaka. I'm a full-time healthcare data analyst and a free-time data visualization and computational artist. 
+## Hi there
+
+I'm Julia; I also go by Julie. 
+
+I'm a marine ecologist and founded Openscapes to champion kinder, better science in less time. My main focus is how open source, data science, and environmental research can empower us to uncover climate solutions faster by working together as inclusive teams and communities.
+
+## Experience
+
+- 2018-present: Founder & Co-Director, Openscapes 
+- 2018-2019: Mozilla Fellow
+- 2013-present: Senior Fellow/Ocean Health Index program lead, NCEAS, UC Santa Barbara
+- 2012: PhD: Drivers and impacts of Humboldt squid 🦑 in a changing climate, Stanford University

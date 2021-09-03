@@ -4,7 +4,7 @@ description: |
   Talks I've given, places my work has been featured, and related material.  
 output: 
   distill::distill_article:
-    css: theme.css
+    css: kaijatheme.css
 ---
 
 ```{r setup, include=FALSE}

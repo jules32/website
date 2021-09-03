@@ -1,17 +1,21 @@
 name: "distill-site"
-title: "ijeamaka anyene"
+title: "Julia Stewart Lowndes, PhD"
 description: |
-  Ijeamaka Anyene's personal website
-base_url: https://ijeamaka-anyene.netlify.app/
+  Julia Stewart Lowndes' personal website
+base_url: https://juliaslowndes.com/
 output_dir: "_site"
-google_analytics: "G-YNW2MDRE2W"
+# google_analytics: ""
 navbar:
   search: false
   right:
-    - text: "portfolio"
-      href: portfolio.html
+    - text: "projects"
+      href: projects.html
     - text: "talks + features"
       href: talks_features.html
+    - icon: fa fa-github
+      href: https://github.com/jules32
+    - icon: fa fa-twitter
+      href: https://www.twitter.com/juliesquid
 collections:
   posts:
     categories: true
@@ -19,4 +23,4 @@ collections:
     authors_metadata: false
     share: [twitter, linkedin]
 output: distill::distill_article
-theme: theme.css
+theme: kaijatheme.css # https://github.com/kaijagahm/kaija_bean/tree/3e08cfe1617661e429d451272ab80ea4f14236df

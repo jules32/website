@@ -1,10 +1,10 @@
 ---
-title: "portfolio"
+title: "projects"
 description: |
-  An amalgation of my professional and personal work, including but not limited to shiny apps, software, and data visualization projects. 
+  My projects 
 output: 
   distill::distill_article:
-    css: theme.css
+    css: kaijatheme.css
 ---
 
 ```{r setup, include=FALSE}
@@ -16,12 +16,13 @@ library(htmltools)
 source("R/functions.R")
 ```
 
-# Computational and generative art
+# Openscapes
+
 ```{r}
 create_proj_card(
   img_src = "images/ZINE_COVER.png",
   url = "https://ijeamaka-anyene.netlify.app/posts/2021-01-04-radial-patterns-in-ggplot2/",
-  title = "Radial Patterns in ggplot2",
+  title = "Openscapes Champions Program",
   text = "A love letter to coord_polar() masquerading as a #rstats zine, 2021",
   text2 = ""
 )
@@ -29,47 +30,42 @@ create_proj_card(
 create_proj_card(
   img_src = "images/cloudscape_app.jpeg",
   url = "https://ijeamaka-a.shinyapps.io/cloudtopia_shinyapp/",
-  title = "Cloudscape",
+  title = "NASA Openscapes",
   text = "a shiny app of a short looping video of a cloudscape, 2021",
   text2 = ""
 )
 ```
 <br><br>
 
-# Data visualizations
+# Ocean Health Index
+
+I was part of the Ocean Health Index team from 2013-2019, where I was a science program lead and helped amplify our transitions to open data science. 
 ```{r}
 create_proj_card(
   img_src = "images/here_say_media.png",
-  url = "https://heresaymedia.org/chinatown-vaccine-rollout-lagging-rest-of-san-francisco/",
-  title = "Vaccine Rollout in San Francisco Neighborhoods",
+  url = "https://www.nature.com/articles/s41559-017-0160",
+  title = "Our path to better science in less time using open data science tools",
   text = "Data visualization and analysis for Here Say Media, 2021",
   text2 = ""
 )
 
 create_proj_card(
-  img_src = "images/2021_04_hbcus.png",
-  url = "https://github.com/Ijeamakaanyene/tidytuesday",
-  title = "TidyTuesday",
-  text = "A #R4DS Weekly Challenge. I am a regular contributor and all of my visualization are created solely using {ggplot2} and other extension packages, 2020",
+  img_src = "images/here_say_media.png",
+  url = "https://ohi-science.org",
+  title = "OHI Science Website",
+  text = "Data visualization and analysis for Here Say Media, 2021",
   text2 = ""
 )
 
-create_proj_card(
-  img_src = "https://raw.githubusercontent.com/mccoylab/covid_naturalhist_dataviz_2020/master/natural_history_infographic_v2.png",
-  url = "https://ijeamaka-anyene.netlify.app/posts/2020-04-16-covid-19-visualization/",
-  title = "COVID-19 Visualization",
-  text = "An infectious disease natural history primer for U.C. Berkeley School of Public Health, 2020",
-  text2 = ""
-)
 ```
 <br><br>
 
-# Shiny apps and package development
+# Open communities
 ```{r}
 create_proj_card(
   img_src = "images/logo.png",
   url = "https://ijeamaka-a.shinyapps.io/rtistry_gallery/",
-  title = "rtistry art gallery",
+  title = "Carpentries",
   text = "A celebration and showcase of art in all of its forms created by the #rstats community. An entry for the RStudio 2021 Shiny Competition, 2021",
    text2 = ""
 )
@@ -77,7 +73,7 @@ create_proj_card(
 create_proj_card(
   img_src = "images/20210322212954.png",
   url = "https://github.com/Ijeamakaanyene/contouR",
-  title = "{contouR}",
+  title = "RLadies",
   text = "An R package for creating patterns using geom_contour(), 2021",
   text2 = ""
 )
