@@ -1,6 +1,6 @@
 ---
 title: ""
-image: "personal_picture_v2.png"
+image: "images/lowndes-portrait.jpg"
 links:
   - label: Twitter
     url: "https://twitter.com/juliesquid"
@@ -17,7 +17,7 @@ output:
   postcards::trestles
 ---
 
-## Hi there
+# Hi there
 
 I'm Julia; I also go by Julie. 
 
@@ -25,10 +25,12 @@ I'm a marine ecologist and founded Openscapes to champion kinder, better science
 
 I am Co-Director of Openscapes and a Senior Fellow at National Center for Ecological Analysis & Synthesis (NCEAS) at the University of California Santa Barbara (UCSB).
 
-## Experience
+<br>
+
+# Experience
 
 - 2018-present: Founder & Co-Director, Openscapes. Senior Fellow, NCEAS, UCSB
 - 2018-2019: Mozilla Fellow
 - 2013-2019: Ocean Health Index science program lead, NCEAS, UCSB
-- 2012: PhD, Stanford University: Drivers and impacts of Humboldt squid 🦑 in a changing climate
+- 2012: PhD, Stanford University: Drivers and impacts of Humboldt squid in a changing climate
 

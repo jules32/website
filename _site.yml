@@ -10,8 +10,8 @@ navbar:
   right:
     - text: "projects"
       href: projects.html
-    - text: "talks + features"
-      href: talks_features.html
+    - text: "talks + pubs"
+      href: talks_pubs.html
     - icon: fa fa-github
       href: https://github.com/jules32
     - icon: fa fa-twitter
@@ -23,4 +23,4 @@ collections:
     authors_metadata: false
     share: [twitter, linkedin]
 output: distill::distill_article
-theme: kaijatheme.css # https://github.com/kaijagahm/kaija_bean/tree/3e08cfe1617661e429d451272ab80ea4f14236df
+theme: theme.css 
