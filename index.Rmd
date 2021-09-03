@@ -21,11 +21,14 @@ output:
 
 I'm Julia; I also go by Julie. 
 
-I'm a marine ecologist and founded Openscapes to champion kinder, better science in less time. My main focus is how open source, data science, and environmental research can empower us to uncover climate solutions faster by working together as inclusive teams and communities.
+I'm a marine ecologist and founded Openscapes to champion kinder, better science in less time. My main focus is how open source, data science, and environmental research can empower us to uncover climate solutions faster by working together as inclusive teams and communities. I am an active part of the open science movement.
+
+I am Co-Director of Openscapes and a Senior Fellow at National Center for Ecological Analysis & Synthesis (NCEAS) at the University of California Santa Barbara (UCSB).
 
 ## Experience
 
-- 2018-present: Founder & Co-Director, Openscapes 
+- 2018-present: Founder & Co-Director, Openscapes. Senior Fellow, NCEAS, UCSB
 - 2018-2019: Mozilla Fellow
-- 2013-present: Senior Fellow/Ocean Health Index program lead, NCEAS, UC Santa Barbara
-- 2012: PhD: Drivers and impacts of Humboldt squid 🦑 in a changing climate, Stanford University
+- 2013-2019: Ocean Health Index science program lead, NCEAS, UCSB
+- 2012: PhD, Stanford University: Drivers and impacts of Humboldt squid 🦑 in a changing climate
+
