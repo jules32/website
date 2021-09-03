@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 description: |
-  Some of the collaborations I'm involved in.
+  My work is highly collaborative and iterative; these are my main projects
 output: 
   distill::distill_article:
     css: theme.css
