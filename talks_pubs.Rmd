@@ -2,12 +2,6 @@
 title: "Talks + Publications"
 description: |
   Selected talks and publications; see [a complete list](talks_pubs_complete.html)
-output: 
-  distill::distill_article:
-    css: theme.css
-    self_contained: false
-    toc: true
-    toc_depth: 3
 ---
 
 ```{r setup, include=FALSE}

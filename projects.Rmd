@@ -2,16 +2,11 @@
 title: "Projects"
 description: |
   My work is highly collaborative and iterative; these are my main projects
-output: 
-  distill::distill_article:
-    css: theme.css
-    self_contained: false
-    toc: true
-    toc_depth: 3
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
 ```
 
 # Openscapes
