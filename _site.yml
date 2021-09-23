@@ -3,7 +3,7 @@ title: "Julia Stewart Lowndes, PhD"
 description: |
   Julia Stewart Lowndes' personal website
 base_url: https://juliaslowndes.com/
-output_dir: "_site"
+output_dir: "docs"
 # google_analytics: ""
 navbar:
   search: false
