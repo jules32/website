@@ -1,5 +1,5 @@
 ---
-title: "Julia S. Lowndes, PhD"
+title: "Julia Stewart Lowndes, PhD"
 image: "images/lowndes-portrait-square.jpeg"
 links:
   - label: Twitter
