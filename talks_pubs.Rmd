@@ -1,7 +1,7 @@
 ---
 title: "Talks + Publications"
 description: |
-  Selected talks and publications; see [a complete list](talks_pubs_complete.html)
+  Selected talks and publications
 ---
 
 ```{r setup, include=FALSE}
@@ -37,5 +37,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 - [Behavioral ecology of Jumbo squid (*Dosidicus gigas*): in relation to oxygen minimum zones](http://www.sciencedirect.com/science/article/pii/S0967064512000860). Stewart et al. 2013, *Deep Sea Research II*.
 
+<br>
 
+See also [complete list of publications and talks](talks_pubs_complete.html)
 

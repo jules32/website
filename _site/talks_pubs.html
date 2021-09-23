@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,30 +85,31 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
+
   <!--radix_placeholder_meta_tags-->
   <title>Julia Stewart Lowndes, PhD: Talks + Publications</title>
 
-  <meta property="description" itemprop="description" content="Selected talks and publications; see [a complete list](talks_pubs_complete.html)"/>
+  <meta property="description" itemprop="description" content="Selected talks and publications"/>
 
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Julia Stewart Lowndes, PhD: Talks + Publications"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Selected talks and publications; see [a complete list](talks_pubs_complete.html)"/>
+  <meta property="og:description" content="Selected talks and publications"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Julia Stewart Lowndes, PhD"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Julia Stewart Lowndes, PhD: Talks + Publications"/>
-  <meta property="twitter:description" content="Selected talks and publications; see [a complete list](talks_pubs_complete.html)"/>
+  <meta property="twitter:description" content="Selected talks and publications"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Talks + Publications"]},{"type":"character","attributes":{},"value":["Selected talks and publications; see [a complete list](talks_pubs_complete.html)"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Talks + Publications"]},{"type":"character","attributes":{},"value":["Selected talks and publications"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -455,7 +456,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1603,7 +1604,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1881,9 +1885,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-size:      12px;
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
-    --title-color:     #003660;
+    --title-color:     rgb(65, 120, 130); /* purple */
     --title-weight:    400;
-    --header-color:    rgba(4, 124, 145, 1);
+    --header-color:    rgb(65, 120, 130);  /*rgba(4, 124, 145, 1); */ /* Allison's teal */
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
@@ -1924,14 +1928,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        18px;
     --hover-color:      white;
-    --bkgd-color:       #003660;
+    --bkgd-color:       rgb(65, 120, 130); /* #003660; Allison's dark blue */
   }
 
   .distill-site-footer {
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        15px;
     --hover-color:      white;
-    --bkgd-color:       #003660;
+    --bkgd-color:       rgb(65, 120, 130);
   }
 
   /*-- Additional custom styles --*/
@@ -2190,7 +2194,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11.1/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2210,7 +2214,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Talks + Publications","description":"Selected talks and publications; see [a complete list](talks_pubs_complete.html)","authors":[]}
+{"title":"Talks + Publications","description":"Selected talks and publications","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2241,7 +2245,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h1>Talks + Publications</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><p>Selected talks and publications; see <a href="talks_pubs_complete.html">a complete list</a></p></p>
+<p><p>Selected talks and publications</p></p>
 </div>
 
 
@@ -2275,6 +2279,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <li><p><a href="http://onlinelibrary.wiley.com/doi/10.1111/gcb.12502/abstract">Combined climate- and prey-mediated range expansion of Humboldt squid (<em>Dosidicus gigas</em>), a large marine predator in the California Current System</a>. Stewart et al. 2014, <em>Global Change Biology</em>.</p></li>
 <li><p><a href="http://www.sciencedirect.com/science/article/pii/S0967064512000860">Behavioral ecology of Jumbo squid (<em>Dosidicus gigas</em>): in relation to oxygen minimum zones</a>. Stewart et al. 2013, <em>Deep Sea Research II</em>.</p></li>
 </ul>
+<p><br></p>
+<p>See also <a href="talks_pubs_complete.html">complete list of publications and talks</a></p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { color: #20794d; } /* Attribute */
+code span.at { } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,13 +77,14 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #20794d; } /* SpecialChar */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
 code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
+
 
   <!--radix_placeholder_meta_tags-->
   <title>Julia Stewart Lowndes, PhD: Talks + Pubs — Complete list</title>
@@ -455,7 +456,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1603,7 +1604,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -1881,9 +1885,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --aside-size:      12px;
     --fig-cap-size:    13px;
     /*-- Main font colors --*/
-    --title-color:     #003660;
+    --title-color:     rgb(65, 120, 130); /* purple */
     --title-weight:    400;
-    --header-color:    rgba(4, 124, 145, 1);
+    --header-color:    rgb(65, 120, 130);  /*rgba(4, 124, 145, 1); */ /* Allison's teal */
     --body-color:      rgba(0, 0, 0, 0.8);
     --aside-color:     rgba(0, 0, 0, 0.6);
     --fig-cap-color:   rgba(0, 0, 0, 0.6);
@@ -1924,14 +1928,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        18px;
     --hover-color:      white;
-    --bkgd-color:       #003660;
+    --bkgd-color:       rgb(65, 120, 130); /* #003660; Allison's dark blue */
   }
 
   .distill-site-footer {
     --text-color:       rgba(255, 255, 255, 0.8);
     --text-size:        15px;
     --hover-color:      white;
-    --bkgd-color:       #003660;
+    --bkgd-color:       rgb(65, 120, 130);
   }
 
   /*-- Additional custom styles --*/
@@ -2190,7 +2194,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     color: var(--hover-color, white);
   }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.10/header-attrs.js"></script>
+  <script src="site_libs/header-attrs-2.11.1/header-attrs.js"></script>
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
   <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
@@ -2250,42 +2254,25 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#talks">Talks</a>
-<ul>
-<li><a href="#section">2021</a></li>
-<li><a href="#section-1">2020</a></li>
-<li><a href="#section-2">2019</a></li>
-<li><a href="#section-3">2018</a></li>
-<li><a href="#section-4">2017</a></li>
-<li><a href="#section-5">2016</a></li>
-</ul></li>
+<li><a href="#talks">Talks</a></li>
 <li><a href="#publications">Publications</a></li>
 <li><a href="#media-about-my-work">Media about my work</a></li>
 </ul>
 </nav>
 </div>
 <h1 id="talks">Talks</h1>
-<p>Talks and a few blogs highlighted;</p>
-<h2 id="section">2021</h2>
-<ul>
-<li><p><a href="https://docs.google.com/presentation/d/1SVwkEDe2gUzJJZ5NGsGTsGPde-NJm9HLtKieSeuthfI/edit?usp=sharing">Openscapes: Better Science for Future Us. Supporting NASA Earth science research teams’ migration to the cloud</a> - August 12, 2021: LP DAAC User Working Group (20 minutes)</p></li>
-<li><p><a href="https://docs.google.com/presentation/d/1HGw4P095-lblHiGQHXYidHiVysjrPxuojxTxKtE13vk/edit?usp=sharing">Better Science for Future Us</a> — July 12, 2021: Plenary at the inaugural Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology <a href="https://www.sortee.org/events/">SORTEE conference</a> (30 minutes) (<a href="https://osf.io/47req/">video</a>)</p></li>
-<li><p><a href="https://docs.google.com/presentation/d/17XcJSxoE3_-0PqYgQ0l7NctniBNUxaZ5Zo0hjL-bjJo/edit?usp=sharing">Better Science for Future Us</a> - June 30, 2021: <a href="https://pangeo.io/pangeo-showcase.html">PANGEO Showcase</a> (15 minutes) (<a href="https://discourse.pangeo.io/t/june-30-2021-the-nasa-openscapes-framework/1631">PANGEO Discourse</a>, <a href="https://zenodo.org/record/5090115#.YO3kom5lDUI">Zenodo</a>)</p></li>
-<li><p><a href="https://docs.google.com/presentation/d/11-flAlM33E7GwkzlJuuzbs8icfTgYnG7UmDwDkgD49k/edit?usp=sharing">Open science as a movement and the art of Openscapes</a> — June 5, 2021: Keynote with Dr. Allison Horst at <a href="https://cascadiarconf.com/">CascadiaR Conference</a> (20 minutes)</p></li>
-<li><p><a href="https://docs.google.com/presentation/d/1hnK6AdZpKeKILph8rBJoXXT2QKyYgvNlhqsoZ3PQ46s/edit?usp=sharing">Learning to code with open science communities</a> — June 4, 2021: <a href="https://www.nature.com/webcasts/event/how-to-start-learning-to-code-in-research/"><em>Nature</em> Webcast</a> (<a href="https://www.nature.com/articles/d41586-021-01638-z">video</a>) (10 minutes) <!---https://docs.google.com/presentation/d/1hnK6AdZpKeKILph8rBJoXXT2QKyYgvNlhqsoZ3PQ46s/edit#slide=id.gd8d3954c7d_0_319---></p></li>
-<li><p><a href="https://docs.google.com/presentation/d/1Mc__4NfMlLHvChoAWnvEqUocP8JS9Ya317hHRaZhLnM/edit?usp=sharing">Openscapes for better science in less time, together</a> — April 6, 2021: CZI Seed Networks Computational Biology Meeting (30 minutes)</p></li>
-<li><p><a href="https://docs.google.com/presentation/d/1_2ybhWlbg_Y_NrTQ_FF8JqqmbsstCkt5IKZqHmwDtFg/edit?usp=sharing">NASA DAACs Openscapes Framework</a> — March 25, 2021: NASA ESDS-ESDIS-DAACs-IMPACT Meeting (15 minutes)</p></li>
-<li><p><a href="https://docs.google.com/presentation/d/1EGSTC-p0kKCV3TNpc65Kyy1S0OOFmDalO917S0UIRvE/edit?usp=sharing">How you can do better science in less time</a> — March 5, 2021: University of South Florida – College of Marine Science Seminar Series with Dr. Marcus Beck: <a href="https://www.canva.com/design/DAEXu-oE6M4/o4okxvLdSs6t3lrxfqApkA/edit#1">Open science lessons from Tampa Bay</a> (20 minutes each) (<a href="https://www.youtube.com/watch?v=21qS05Yv3GQ&amp;t=195s">video</a>)</p></li>
-</ul>
+<p><a href="https://docs.google.com/presentation/d/1SVwkEDe2gUzJJZ5NGsGTsGPde-NJm9HLtKieSeuthfI/edit?usp=sharing">Openscapes: Better Science for Future Us. Supporting NASA Earth science research teams’ migration to the cloud</a> - August 12, 2021: LP DAAC User Working Group (20 minutes)</p>
+<p><a href="https://docs.google.com/presentation/d/1HGw4P095-lblHiGQHXYidHiVysjrPxuojxTxKtE13vk/edit?usp=sharing">Better Science for Future Us</a> — July 12, 2021: Plenary at the inaugural Society for Open, Reliable, and Transparent Ecology and Evolutionary Biology <a href="https://www.sortee.org/events/">SORTEE conference</a> (30 minutes) (<a href="https://osf.io/47req/">video</a>)</p>
+<p><a href="https://docs.google.com/presentation/d/17XcJSxoE3_-0PqYgQ0l7NctniBNUxaZ5Zo0hjL-bjJo/edit?usp=sharing">Better Science for Future Us</a> - June 30, 2021: <a href="https://pangeo.io/pangeo-showcase.html">PANGEO Showcase</a> (15 minutes) (<a href="https://discourse.pangeo.io/t/june-30-2021-the-nasa-openscapes-framework/1631">PANGEO Discourse</a>, <a href="https://zenodo.org/record/5090115#.YO3kom5lDUI">Zenodo</a>)</p>
+<p><a href="https://docs.google.com/presentation/d/11-flAlM33E7GwkzlJuuzbs8icfTgYnG7UmDwDkgD49k/edit?usp=sharing">Open science as a movement and the art of Openscapes</a> — June 5, 2021: Keynote with Dr. Allison Horst at <a href="https://cascadiarconf.com/">CascadiaR Conference</a> (20 minutes)</p>
+<p><a href="https://docs.google.com/presentation/d/1hnK6AdZpKeKILph8rBJoXXT2QKyYgvNlhqsoZ3PQ46s/edit?usp=sharing">Learning to code with open science communities</a> — June 4, 2021: <a href="https://www.nature.com/webcasts/event/how-to-start-learning-to-code-in-research/"><em>Nature</em> Webcast</a> (<a href="https://www.nature.com/articles/d41586-021-01638-z">video</a>) (10 minutes) <!---https://docs.google.com/presentation/d/1hnK6AdZpKeKILph8rBJoXXT2QKyYgvNlhqsoZ3PQ46s/edit#slide=id.gd8d3954c7d_0_319---></p>
+<p><a href="https://docs.google.com/presentation/d/1Mc__4NfMlLHvChoAWnvEqUocP8JS9Ya317hHRaZhLnM/edit?usp=sharing">Openscapes for better science in less time, together</a> — April 6, 2021: CZI Seed Networks Computational Biology Meeting (30 minutes)</p>
+<p><a href="https://docs.google.com/presentation/d/1_2ybhWlbg_Y_NrTQ_FF8JqqmbsstCkt5IKZqHmwDtFg/edit?usp=sharing">NASA DAACs Openscapes Framework</a> — March 25, 2021: NASA ESDS-ESDIS-DAACs-IMPACT Meeting (15 minutes)</p>
+<p><a href="https://docs.google.com/presentation/d/1EGSTC-p0kKCV3TNpc65Kyy1S0OOFmDalO917S0UIRvE/edit?usp=sharing">How you can do better science in less time</a> — March 5, 2021: University of South Florida – College of Marine Science Seminar Series with Dr. Marcus Beck: <a href="https://www.canva.com/design/DAEXu-oE6M4/o4okxvLdSs6t3lrxfqApkA/edit#1">Open science lessons from Tampa Bay</a> (20 minutes each) (<a href="https://www.youtube.com/watch?v=21qS05Yv3GQ&amp;t=195s">video</a>)</p>
 <!---https://twitter.com/colorsofscience/status/1367957167295373315--->
-<ul>
-<li><p><a href="https://openscapes.github.io/slides/betterscience/environment-canada#1">Open practices for better science in less time</a> — February 24, 2021: Open Science Community of Practice, Environment and Climate Change Canada (40 minutes) (<a href="https://youtu.be/F1Df1Macz0g">video</a>)</p></li>
-<li><p><a href="https://docs.google.com/presentation/d/11zgFIzYaMMsNTQVpUY5z3GnPUqTKQLJFTUsF4gi3qQ4/edit?usp=sharing">NASA DAACs Openscapes Framework</a> — February 10, 2021: NASA’s Earth Science Data System Working Groups (ESDSWG) (5 minutes)</p></li>
-</ul>
-<h2 id="section-1">2020</h2>
-<ul>
-<li><a href="https://docs.google.com/presentation/d/1ty--0Jr7HRD3VXro5K8eMPaxApzeE1dkAZKVC4jyxm0/edit?usp=sharing">Openscapes</a> — December 16, 2020 Invest in Open’s <a href="https://investinopen.org/community/jrost-2020-conference/">Joint Roadmap for Open Science Tools (JROST) Conference</a> (5 minutes)</li>
-</ul>
+<p><a href="https://openscapes.github.io/slides/betterscience/environment-canada#1">Open practices for better science in less time</a> — February 24, 2021: Open Science Community of Practice, Environment and Climate Change Canada (40 minutes) (<a href="https://youtu.be/F1Df1Macz0g">video</a>)</p>
+<p><a href="https://docs.google.com/presentation/d/11zgFIzYaMMsNTQVpUY5z3GnPUqTKQLJFTUsF4gi3qQ4/edit?usp=sharing">NASA DAACs Openscapes Framework</a> — February 10, 2021: NASA’s Earth Science Data System Working Groups (ESDSWG) (5 minutes)</p>
+<p><a href="https://docs.google.com/presentation/d/1ty--0Jr7HRD3VXro5K8eMPaxApzeE1dkAZKVC4jyxm0/edit?usp=sharing">Openscapes</a> — December 16, 2020 Invest in Open’s <a href="https://investinopen.org/community/jrost-2020-conference/">Joint Roadmap for Open Science Tools (JROST) Conference</a> (5 minutes)</p>
 <p><a href="https://docs.google.com/presentation/d/1n4Z87Z8ax_pUUO98lHzsOGYHTtbshr_LB5JSznOiIW0/edit?usp=sharing"><strong>Audience building for open source projects</strong> - Workshop at Chan Zuckerberg Initiative Essential Open Source Software for Science Meeting - December 8, 2020</a></p>
 <p><a href="https://docs.google.com/presentation/d/15FsK37GQVvhL9zbnP1E1n9CEn-Xu5HvIe2FaIMpdC0s/edit?usp=sharing"><strong>Normalizing talking about data</strong> - CSCCE Data Science Special Interest Group Discussion - November 23, 2020</a></p>
 <p><a href="https://openscapes.github.io/slides/betterscience/nwfsc#1"><strong>R and teamwork for better science in less time</strong> -</a> <a href="https://www.fisheries.noaa.gov/event/nwfsc-monster-seminar-jam-julia-stewart-lowndes">NOAA Northwest Fisheries Science Center - November 19, 2020</a></p>
@@ -2297,7 +2284,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><a href="https://openscapes.github.io/slides/betterscience/smast#1"><strong>R and teamwork for better science in less time</strong> — UMass Dartmouth’s School for Marine Science &amp; Technology (SMAST), New Bedford, Massachusetts <em>February 25, 2020</em></a></p>
 <p><a href="https://openscapes.github.io/slides/betterscience/sccwrp#1"><strong>R and teamwork for better science in less time</strong> — Southern California Coastal Water Research Project (SCCWRP), Costa Mesa, California <em>February 7, 2020</em></a> <a href="https://vimeo.com/390086585">(video)</a></p>
 <p><a href="https://rstudio-conf-2020.github.io/r-for-excel/"><strong>R for Excel Users</strong> — Workshop at RStudio::conf(2020), San Francisco, California <em>2020-01-27</em></a></p>
-<h2 id="section-2">2019</h2>
 <p><a href="https://openscapes.github.io/slides/betterscience/socalR#1"><strong>R for better science in less time</strong> — headline talk at Southern California R Users All Hands Meetup, Los Angeles, California <em>2019-11-23</em></a></p>
 <p><a href="https://docs.google.com/presentation/d/1LA4EcnRxD11rjwbRh0hrjPG5J0dmiiuCbNaoQrz0XHU/edit?usp=sharing"><strong>R for better science in less time: Lessons from the Ocean Health Index and Openscapes</strong> - invited talk at the School of Aquatic and Fisheries Sciences, University of Washington, Seattle, Washington <em>2019-11-21</em></a></p>
 <p><a href="https://openscapes.github.io/slides/betterscience/escience#1"><strong>R and friends for better science in less time in big (and small) team collaborations</strong> - invited talk at the eScience Institute, Seattle, Washington <em>2019-11-19</em></a></p>
@@ -2309,7 +2295,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><a href="https://jules32.github.io/streamlined-workflows/#1"><strong>Streamlined workflows in R</strong> — talk at RLadies Santa Barbara <em>2019-03-14</em></a></p>
 <p><a href="https://docs.google.com/presentation/d/1UKo4kb6FOkZDqdDaMXN_jAVKkkYNs7BMiInMbXUJ_48/edit?usp=sharing"><strong>Transforming how we approach marine science for management</strong> — invited guest lecture at University of California at Santa Barbara Conservation Ecology course <em>2019-03-07</em></a></p>
 <p><a href="https://docs.google.com/presentation/d/1LwHpLQvIVeDoTNlZfrzpiYTifY4P9rGuqVq9TS9iFPI/edit?usp=sharing"><strong>Building communities of practice around environmental open data science</strong> — invited talk at the Palo Alto University Rotary Club Meeting <em>2019-02-08</em></a></p>
-<h2 id="section-3">2018</h2>
 <p><a href="https://docs.google.com/presentation/d/1s6o4lqrn3zk2_UF2W-6A5orAT-bXREJ_mB6ghf-3eZQ/edit?usp=sharing"><strong>My Fellowship with Mozilla: Building communities of practice around environmental open data science</strong> — seminar at the National Center for Ecological Analysis and Synthesis <em>2018-11-07</em></a></p>
 <p><a href="https://docs.google.com/presentation/d/1SHvJbBWrGVqzjAPos1jbtxSn_2DAl44JmDgY5v2NxC8/edit?usp=sharing"><strong>The power of open science: experience from the Ocean Health Index</strong> — invited seminar at the Woods Hole Oceanographic Institution <em>2018-10-24</em></a></p>
 <p><a href="https://jules32.github.io/2018-10-22-whoi/overview"><strong>Software Carpentry</strong> — 2-day workshop at the Woods Hole Oceanographic Institution (WHOI) <em>2018-10-22</em></a> <a href="http://ohi-science.org/data-science-training">(Intro to data science book)</a></p>
@@ -2318,7 +2303,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><a href="https://docs.google.com/presentation/d/1frhNFr-Lf5KZCzJtYMRSim2-iZ72zAJZ__0YrqAdbs8/edit?usp=sharing"><strong>The power of open science: experience from the Ocean Health Index</strong> — invited seminar at Moss Landing Marine Laboratories, California, USA <em>2018-04-05</em></a></p>
 <p><a href="https://nceas.github.io/crescynt-training/data-integration"><strong>Data integration and team science</strong> — 4 day workshop at NCEAS, California, USA <em>2018-03-12</em></a></p>
 <p><a href="https://docs.google.com/presentation/d/10KkXEv4r3wWtdKvB6RFOPe809eMNldODaRqQxn-jeME/edit?usp=sharing"><strong>The power of open science: experience from the Ocean Health Index</strong> — invited keynote talk at the Royal Belgian Institute of Natural Sciences, Brussels <em>2018-02-27</em></a></p>
-<h2 id="section-4">2017</h2>
 <p><a href="https://docs.google.com/presentation/d/1CVK8HRDubFU4UEduBK5q6JJebhbyVjB6SpTpjZI6q6Y/edit?usp=sharing"><strong>Better science in less time using open data science tools</strong> — invited seminar at Cal State University Monterey Bay <em>2017-12-04</em></a></p>
 <p><a href="https://jules32.github.io/2017-11-30-MBARI/overview"><strong>Software Carpentry</strong> — 2-day workshop at the Monterey Bay Aquarium Research Institute (MBARI) <em>2017-11-30</em></a> <a href="http://ohi-science.org/data-science-training">(Intro to data science book)</a></p>
 <p><a href="https://docs.google.com/presentation/d/141gf6dIkQsOXJ74xWEeMFYOQEL41lZydywRRf_4RBPE/edit"><strong>Reproducible Research: Better science in less time</strong> — invited webinar for DataONE <em>2017-10-10</em></a></p>
@@ -2327,7 +2311,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p><a href="http://ohi-science.org/betterscienceinlesstime/"><strong>Better science in less time</strong> — website to accompany our <em>Nature Ecology &amp; Evolution</em> publication <em>2017-05-23</em></a></p>
 <p><a href=""><strong>Better science in less time — open data science for marine science and management</strong> — talk at NCEAS Roundtable <em>2017-05-24</em> [</a><a href="https://www.youtube.com/watch?v=x4uzVAZvFCA"><strong>video</strong>]</a></p>
 <p><a href="https://docs.google.com/presentation/d/1KDwUPVI12ioYzkhzzhnUEZbFJObuDzHPPSaOaN77Ye8/edit?usp=sharing"><strong>Transforming how we approach marine science for management</strong> — talk at EBM Tools Network Webinar <em>2017-05-02</em></a> <a href="">[</a><a href="https://www.openchannels.org/webinars/2017/using-ocean-health-index-integrated-tool-implementing-ebm-and-coastal-management"><strong>video</strong>]</a></p>
-<h2 id="section-5">2016</h2>
 <p><a href="https://jules32.github.io/rmarkdown-website-tutorial/"><strong>Making free websites with RStudio’s R Markdown</strong> — tutorial at NCEAS <em>2016-12-14</em></a></p>
 <p><a href="https://jules32.github.io/opensci-talk/short#1"><strong>Better science in less time using data science tools</strong> — talk at WSN Conference <em>2016-11-15</em></a></p>
 <p><a href="https://jules32.github.io/opensci-talk/#1"><strong>Being a marine data scientist</strong> — invited talk at Stanford’s Hopkins Marine Station <em>2016-10-21</em></a> <a href="">[</a><a href="http://seawater.stanford.edu/Lowndes.mp4"><strong>video</strong>]</a></p>

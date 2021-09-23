@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 description: |
-  My work is highly collaborative and iterative; these are my main projects
+  A few main projects
 ---
 
 ```{r setup, include=FALSE}
@@ -11,7 +11,7 @@ library(tidyverse)
 
 # Openscapes
 
-[**Openscapes**](https://openscapes.org) is an approach for kinder, better science in less time. We approach open science as a spectrum, as a behavior change, and as a movement, and blog at [openscapes.org/blog](https://openscapes.org/blog).
+[**Openscapes**](https://openscapes.org) is an approach for kinder, better science in less time. We approach open science as a spectrum, as a behavior change, and as a movement. We blog at [openscapes.org/blog](https://openscapes.org/blog).
 
 - [**Openscapes Champions Program**](https://openscapes.org/champions) is an open data science mentorship program for science teams
 - [**NASA Openscapes Framework**](https://nasa-openscapes.github.io) supports scientists using data from NASA Earthdata served from the Distributed Active Archive Centers (DAACs) as they migrate workflows to the cloud
@@ -38,6 +38,7 @@ library(tidyverse)
 
 ---
 
+<!---
 # Open communities
 
 I have built so much confidence from inclusive and welcoming open communities, who have been instrumental in my growth as an open science contributor.
@@ -49,6 +50,6 @@ I have built so much confidence from inclusive and welcoming open communities, w
 - [RLadies Santa Barbara](https://www.meetup.com/rladies-santa-barbara/) co-founder
 - [Mozilla](https://blog.mozilla.org/en/mozilla/news/mozilla-announces-25-new-fellows-in-openness-science-and-tech-policy/) fellow
 
-
+--->
 
 
